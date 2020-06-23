@@ -10,14 +10,18 @@
       </div>
     </div>
     <div>
-      <button
-        mat-icon-button
-        color="warn"
-        [attr.aria-label]="'Remove ' + b.title + ' from reading list'"
-        (click)="removeFromReadingList(b)"
-      >
+      <button mat-icon-button
+              color="warn"
+              [attr.aria-label]="'Remove ' + b.title + ' from reading list'"
+              (click)="removeFromReadingList(b)">
+
         <mat-icon>remove_circle</mat-icon>
       </button>
+
+      <button 
+              (click)="finishedDateFromReadingList(b)"> Finished
+      </button>
+
     </div>
   </div>
 </ng-container>
